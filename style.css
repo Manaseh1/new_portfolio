@@ -234,7 +234,8 @@ h2 {
 /* Footer */
 footer {
     background-color: #333;
-    color: #fff;
+    color: red;
+
     text-align: center;
     padding: 1em 0;
     font-size: 0.9em;
