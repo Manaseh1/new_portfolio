@@ -1,0 +1,241 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #1a1a2e;
+    background-color: #f0f8ff;
+    line-height: 1.6;
+}
+
+/* Header Navigation */
+header {
+    background: #1a1a2e;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    color: #00aaff;
+}
+
+/* Hero Section */
+#hero {
+    padding: 3em;
+    text-align: center;
+    background-color: #e6f7ff;
+}
+
+#hero h1 {
+    font-size: 2.5em;
+    color: #1a1a2e;
+    margin-bottom: 0.5em;
+}
+
+#hero p {
+    font-size: 1.2em;
+    color: #007acc;
+}
+
+/* Section Styles */
+section {
+    padding: 2em;
+    max-width: 900px;
+    margin: auto;
+}
+
+h2 {
+    font-size: 2em;
+    color: #1a1a2e;
+    margin-bottom: 0.5em;
+}
+
+/* Experience Card */
+.experience-card {
+    background: #cce7ff;
+    padding: 1.5em;
+    margin-bottom: 1.5em;
+    border-left: 5px solid #007acc;
+    border-radius: 8px;
+}
+
+/* Project Cards */
+.project-card {
+    background: #fff;
+    padding: 1.5em;
+    margin-bottom: 1.5em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    border-left: 5px solid #007acc;
+    border-radius: 8px;
+}
+
+.project-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 0.5em;
+}
+
+/* Contact */
+#contact p {
+    font-size: 1.1em;
+    margin: 0.5em 0;
+    color: #1a1a2e;
+}
+
+#contact a {
+    color: #00aaff;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #1a1a2e;
+    color: #fff;
+    font-size: 0.9em;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    header nav ul {
+        flex-direction: column;
+    }
+}
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #1a1a2e;
+    /* Dark blue */
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 1.8em;
+    margin-bottom: 0.5em;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+}
+
+header nav ul li a {
+    color: #00aaff;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Sections */
+.section-light {
+    background-color: #f0f8ff;
+    padding: 2em;
+    text-align: center;
+}
+
+.section-dark {
+    background-color: #1a1a2e;
+    color: #fff;
+    padding: 2em;
+    text-align: center;
+}
+
+.section-dark h2,
+.section-dark p {
+    color: #e6f7ff;
+}
+
+/* Section Headings */
+h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    color: #007acc;
+}
+
+/* Experience */
+.experience-item {
+    margin-top: 1.5em;
+    color: #333;
+    text-align: left;
+    padding: 1em;
+    background: #cce7ff;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 1.5em auto;
+}
+
+/* Projects */
+.project-item {
+    text-align: left;
+    margin: 1.5em auto;
+    padding: 1em;
+    background: #ffffff;
+    border-radius: 8px;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.project-item img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 0.5em;
+}
+
+/* Contact */
+#contact p {
+    font-size: 1.1em;
+    color: #00aaff;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    font-size: 0.9em;
+}
