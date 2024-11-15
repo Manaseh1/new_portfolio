@@ -1,0 +1,32 @@
+* {
+    font-family: Open;
+    font-family: "Open Sans", sans-serif;
+    margin: 10px;
+}
+
+body {
+    background-color: #F0F8FF;
+}
+
+nav {
+    background-color: #CAE9F5;
+    border-radius: 50px;
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 50px;
+}
+
+.list-item {
+    padding: 20px 30px 20px 30px;
+    font-size: medium;
+    width: 55px;
+    text-align: center;
+    margin: 10px;
+    border-radius: 50px;
+    list-style-type: none;
+    background-color: #F0F8FF;
+}
