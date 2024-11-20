@@ -16,17 +16,120 @@ nav {
 .list {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: center;
     margin-right: 50px;
 }
 
 .list-item {
+    position: relative;
     padding: 20px 30px 20px 30px;
     font-size: medium;
     width: 55px;
-    text-align: center;
     margin: 10px;
     border-radius: 50px;
     list-style-type: none;
     background-color: #F0F8FF;
 }
+
+a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+.hero-section {
+    padding-top: 20px;
+    background-color: #BFECFF;
+    border-radius: 50px;
+    display: flex;
+
+}
+
+@keyframes slippery {
+    from {
+        left: 500px;
+    }
+
+    to {
+        left: 10px;
+    }
+
+}
+
+.emoji {}
+
+.intro {
+    text-align: left;
+    font-size: 30px;
+    padding: 20px;
+
+}
+
+.intro h5 {
+    position: relative;
+    background-color: #F0F8FF;
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+    border-radius: 50px;
+    animation-name: slippery;
+    animation-duration: 4s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+
+}
+
+.description {
+    text-align: left;
+    font-size: 20px;
+}
+
+.my_image {
+    width: 350px;
+    border-radius: 50px;
+}
+
+/* Wave try out one */
+
+.waving {
+    animation-name: wave-animation;
+    animation-duration: 3.0s;
+    animation-iteration-count: 2;
+    transform-origin: 70% 70%;
+}
+
+@keyframes wave-animation {
+    0% {
+        transform: rotate(0.0deg)
+    }
+
+    10% {
+        transform: rotate(14.0deg)
+    }
+
+    20% {
+        transform: rotate(-8.0deg)
+    }
+
+    30% {
+        transform: rotate(14.0deg)
+    }
+
+    40% {
+        transform: rotate(-4.0deg)
+    }
+
+    50% {
+        transform: rotate(10.0deg)
+    }
+
+    60% {
+        transform: rotate(0.0deg)
+    }
+
+    100% {
+        transform: rotate(0.0deg)
+    }
+}
+
+@media (max-width: 768px) {}
