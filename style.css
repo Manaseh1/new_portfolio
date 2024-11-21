@@ -65,7 +65,7 @@ a :hover {
     padding-top: 20px;
     background-color: #BFECFF;
     border-radius: 50px;
-    margin: 30px;
+    /* margin: 30px; */
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto 100px;
@@ -114,7 +114,7 @@ a :hover {
     max-width: 100%;
 
     border-radius: 20px;
-    padding-left: 100px;
+    /* padding-left: 100px; */
 
 }
 
@@ -172,28 +172,77 @@ a :hover {
 
     }
 } */
-
+#hamburger-menu {
+    display: none;
+}
 
 @media (max-width: 768px) {
+    * {
+        margin: 10px;
+    }
+
+    #hamburger-menu {
+        display: block;
+    }
+
+    .hamburger-button {
+        background-color: #CAE9F5;
+        color: black;
+        padding: 15px;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .nav-links {
+        display: none;
+        background-color: #CAE9F5;
+        color: white;
+    }
+
+    .nav-links a {
+        display: inline-block;
+        padding: 15px;
+        color: black;
+        text-decoration: none;
+    }
+
+    .nav-links a:hover {
+        background-color: #CAE9F5;
+    }
+
+    .nav {
+        display: none;
+    }
+
     .hero-section {
         display: flex;
         flex-direction: column;
         text-size-adjust: auto;
-
+        border-radius: 10px;
+        margin: 20px;
     }
 
-    @keyframes new-slippery {}
+    .intro h5 {
+        animation-name: new-slippery;
+    }
+
+    @keyframes new-slippery {
+        from {
+            left: 100px;
+        }
+
+        to {
+            left: 0px;
+        }
+    }
 
     .intro {
         background-color: #BFECFF;
     }
 
-    img {
+    .my_image {
         display: block;
-        border: none;
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
-        height: auto;
+        border-radius: 0px;
+        margin: auto;
     }
 }
