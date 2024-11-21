@@ -1,4 +1,4 @@
-* {
+/* * {
     font-family: Open;
     font-family: "Open Sans", sans-serif;
     margin: 10px;
@@ -9,12 +9,14 @@ body {
 }
 
 nav {
+
     background-color: #CAE9F5;
     border-radius: 50px;
 }
 
 .list {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
     margin-right: 50px;
@@ -52,7 +54,11 @@ a :hover {
     border-radius: 50px;
     display: flex;
     flex-direction: row-reverse;
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 2fr)); */
+/* flex-wrap: wrap; */
 }
+
 
 @keyframes slippery {
     from {
@@ -65,7 +71,6 @@ a :hover {
 
 }
 
-.emoji {}
 
 .intro {
     text-align: left;
@@ -96,14 +101,13 @@ a :hover {
 }
 
 .my_image {
-    width: 350px;
+    max-width: 350px;
     height: 500px;
     border-radius: 20px;
     padding-left: 100px;
 
 }
 
-/* Wave try out one */
 
 .waving {
     animation-name: wave-animation;
@@ -146,89 +150,28 @@ a :hover {
     }
 }
 
-/* Media Queries for Small Screens */
 @media (max-width: 768px) {
-    .list {
-        flex-direction: column;
-        /* Stack navigation links vertically */
-        margin-right: 0;
-        /* Remove right margin */
-        padding: 0;
-    }
-
-    .list-item {
-        padding: 10px;
-        /* Reduce padding for list items */
-        font-size: small;
-        /* Reduce font size */
-        width: auto;
-        /* Allow items to take full width */
-    }
-
     .hero-section {
+        display: flex;
         flex-direction: column;
-        /* Stack image and text vertically */
-        align-items: center;
-        /* Center align items */
-        padding: 20px;
-        /* Add padding */
+        text-size-adjust: auto;
+        background-color: transparent;
+
     }
 
-    .my_image {
-        width: 80%;
-        /* Make the image responsive */
+    @keyframes new-slippery {}
+
+    .intro {
+        background-color: #BFECFF;
+    }
+
+    img {
+        display: block;
+        border: none;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
         height: auto;
-        /* Maintain aspect ratio */
-        margin: 10px 0;
-        /* Add vertical spacing */
-    }
-
-    .intro {
-        font-size: 20px;
-        /* Adjust font size for smaller screens */
-        text-align: center;
-        /* Center align text */
-        padding: 10px;
-        /* Adjust padding */
-    }
-
-    .intro h5 {
-        font-size: 18px;
-        /* Smaller font for the heading */
-        width: auto;
-        /* Auto width for flexible layout */
-        padding: 10px;
-    }
-
-    .description {
-        font-size: 16px;
-        /* Smaller font size for the description */
-        text-align: center;
-        /* Center align description */
-    }
-}
-
-/* Media Queries for Extra Small Screens */
-@media (max-width: 480px) {
-    .list-item {
-        font-size: 12px;
-        /* Even smaller font size */
-        padding: 8px;
-        /* Adjust padding for compact layout */
-    }
-
-    .intro {
-        font-size: 16px;
-        /* Further reduce font size */
-    }
-
-    .description {
-        font-size: 14px;
-        /* Adjust font size for better readability */
-    }
-
-    .my_image {
-        width: 90%;
-        /* Slightly wider image for small screens */
+        background-color: #BFECFF;
     }
 }

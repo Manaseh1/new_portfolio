@@ -1,11 +1,23 @@
+@keyframes slippery {
+    from {
+        left: 350px;
+    }
+
+    to {
+        left: 0px;
+    }
+
+}
+
 * {
     font-family: Open;
     font-family: "Open Sans", sans-serif;
-    margin: 10px;
+    margin: 20px;
 }
 
 body {
     background-color: #F0F8FF;
+
 }
 
 nav {
@@ -19,7 +31,7 @@ nav {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    margin-right: 50px;
+    /* margin-right: 50px; */
 }
 
 .list-item {
@@ -41,6 +53,7 @@ a {
     text-align: center;
 }
 
+
 a :hover {
     border: 1px;
     transition: 2s;
@@ -52,22 +65,12 @@ a :hover {
     padding-top: 20px;
     background-color: #BFECFF;
     border-radius: 50px;
-    display: flex;
-    flex-direction: row-reverse;
-    /* display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 2fr)); */
-    /* flex-wrap: wrap; */
-}
-
-
-@keyframes slippery {
-    from {
-        left: 350px;
-    }
-
-    to {
-        left: 0px;
-    }
+    margin: 30px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto 100px;
+    justify-content: space-evenly;
+    align-content: center;
 
 }
 
@@ -76,6 +79,8 @@ a :hover {
     text-align: left;
     font-size: 30px;
     padding: 20px;
+    grid-row: 1;
+    grid-column: 2;
 
 }
 
@@ -93,6 +98,11 @@ a :hover {
 
 }
 
+.intro h5:hover {
+    background-color: aqua;
+    /* transition-delay: 2s; */
+
+}
 
 
 .description {
@@ -101,18 +111,20 @@ a :hover {
 }
 
 .my_image {
-    max-width: 350px;
-    height: 500px;
+    max-width: 100%;
+
     border-radius: 20px;
     padding-left: 100px;
 
 }
 
 
+
+
 .waving {
     animation-name: wave-animation;
     animation-duration: 3.0s;
-    animation-iteration-count: 2;
+    animation-iteration-count: infinite;
     transform-origin: 70% 70%;
 }
 
@@ -150,12 +162,23 @@ a :hover {
     }
 }
 
+/* @media (max-width:500px) {
+    .hero-section {
+        display: block;
+    }
+
+    .my_image {
+        width: 70%;
+
+    }
+} */
+
+
 @media (max-width: 768px) {
     .hero-section {
         display: flex;
         flex-direction: column;
         text-size-adjust: auto;
-        background-color: transparent;
 
     }
 
@@ -172,6 +195,5 @@ a :hover {
         margin-right: auto;
         width: 50%;
         height: auto;
-        background-color: #BFECFF;
     }
 }
