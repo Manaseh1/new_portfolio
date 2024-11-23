@@ -112,19 +112,16 @@ a :hover {
 
 .my_image {
     max-width: 100%;
-
+    max-height: inherit;
     border-radius: 20px;
     /* padding-left: 100px; */
 
 }
 
-
-
-
 .waving {
     animation-name: wave-animation;
     animation-duration: 3.0s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 2s;
     transform-origin: 70% 70%;
 }
 
@@ -168,18 +165,48 @@ a :hover {
     }
 
     .my_image {
-        width: 70%;
+arrayToDestruct     width: 70%;
 
     }
 } */
+.section2 {
+    display: flex;
+}
+
+.edu {
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    background-color: #BFECFF;
+    border-radius: 10px;
+    width: 100%;
+
+}
+
+.edu h1 {
+    font-size: 35px;
+}
+
+.study {
+    margin: auto;
+    /* padding: 10px; */
+}
+
+.study h2 {
+    text-decoration: underline;
+}
+
+/* Hamburger menu  */
 #hamburger-menu {
     display: none;
 }
 
+/* Media queries */
 @media (max-width: 768px) {
     * {
-        margin: 10px;
+        margin: 5px;
     }
+
 
     #hamburger-menu {
         display: block;
@@ -200,7 +227,7 @@ a :hover {
     }
 
     .nav-links a {
-        display: inline-block;
+        display: block;
         padding: 15px;
         color: black;
         text-decoration: none;
@@ -226,6 +253,10 @@ a :hover {
         animation-name: new-slippery;
     }
 
+    .intro h1 {
+        font-size: 45px;
+    }
+
     @keyframes new-slippery {
         from {
             left: 100px;
@@ -244,5 +275,13 @@ a :hover {
         display: block;
         border-radius: 0px;
         margin: auto;
+    }
+
+    .section2 {
+        display: block;
+    }
+
+    .edu {
+        margin: 20px;
     }
 }
