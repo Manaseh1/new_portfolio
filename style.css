@@ -201,6 +201,21 @@ arrayToDestruct     width: 70%;
     display: none;
 }
 
+footer {
+    background-color: #CAE9F5;
+    margin: auto -40px -60px -40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* grid-column-end: span 1; */
+}
+
+.copyright {
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+}
+
 /* Media queries */
 @media (max-width: 768px) {
     * {
@@ -283,5 +298,9 @@ arrayToDestruct     width: 70%;
 
     .edu {
         margin: 20px;
+    }
+
+    footer {
+        margin: auto -30px -100px -20px !important;
     }
 }
